@@ -1,0 +1,16 @@
+name: Terminator
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+
+jobs:
+  issue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        name: checkout
+
+      - run: php app.php
+        name: run my php code
+      

@@ -1,0 +1,6 @@
+parameters:
+	paths:
+		- %currentWorkingDirectory%/src
+		- %currentWorkingDirectory%/tests
+	level: 7
+	checkMissingIterableValueType: false
